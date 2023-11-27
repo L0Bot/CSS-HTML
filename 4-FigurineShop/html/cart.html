@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoppyFig</title>
+    <link rel="resetsheet" href="./../css/reset.css">
+    <link rel="stylesheet" href="./../css/style2.css">
+</head>
+
+<body>
+    <header>
+        <h1>ShoppyFig <span id="Header__span">Figurines et statuettes</span></h1>
+        <p>Votre panier <em> 3 produits</em></p>
+    </header>
+    <main>
+        <section class="cart">
+            <h2 class="cart__title">Votre panier</h2>
+            <div class="cart__contenu">
+            <table class="cart__product">
+            <thead class="cart__product--head">
+                <tr class="cart__product--head-line">
+                    <th class="cart__product--head-item">Figurine</th>
+                    <th class="cart__product--head-item">Prix unitaire</th>
+                    <th class="cart__product--head-item">Quantité</th>
+                </tr>
+            </thead>
+            <tbody class="cart__contenu--body">
+                <tr class="cart__contenu-article">
+                    <td class="cart__contenu-articleName">Cloud Strife</td>
+                    <td class="cart__contenu-articlePrice">59€</td>
+                    <td class="cart__contenu--article-qty"><input type="number" name="qty[0]" value="1" min="0"><a href="#">supprimer</a></td>
+                </tr>
+                <tr class="cart__contenu-article">
+                    <td class="cart__contenu-articleName">Tifa Lockart</td>
+                    <td class="cart__contenu-articlePrice">69€</td>
+                    <td class="cart__contenu--article-qty"><input type="number" name="qty[1]" value="1" min="0"><a href="#">supprimer</a></td>
+                </tr>
+                <tr class="cart__contenu-article">
+                    <td class="cart__contenu-articleName">Barret Wallace</td>
+                    <td class="cart__contenu-articlePrice">69€</td>
+                    <td class="cart__contenu--article-qty"><input type="number" name="qty[2]" value="1" min="0"><a href="#">supprimer</a></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr class="cart__contenu-total">
+                    <td class="cart__contenu-totalText">Total de la commande :</td>
+                    <td class="cart__contenu-totalPrice">197€</td>
+                </tr>
+            </tfoot>
+            </table>
+        </div>
+        </section>
+        <form id="form-Delivery">
+
+            <section class="deliverychoice">
+
+                <h2 class="Delivery__title">Préférences de livraison</h2>
+
+                <div class="Delivery__Option">
+
+                    <div id="Option-Left">
+
+                        <div class="Delivery__choice">
+                            <h3 class="Delivery__subtitle">Où souhaitez-vous être livré ?</h3>
+                            <div>
+
+                                <input checked type="radio" name="Where" id="Home" value="Home" class="form__radio">
+                                <label for="Where" class="form__radio--label">Mon adresse courante</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="Where" id="Other" value="Other" class="form__radio">
+                                <label for="Other" class="form__radio--label">Autre adresse</label>
+                            </div>
+                        </div>
+                        <div class="Delivery__choice">
+                            <h3 class="Delivery__subtitle">Option</h3>
+                            <div>
+                                <input checked type="checkbox" name="FollowedSMS" id="FollowedSMS">
+                                <label for="FollowedSMS" class="form__checkbox--label">Suivi de livraison par sms
+                                    (inclus)</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="SatisfiedOrNot" id="SatisfiedOrNot">
+                                <label for="SatisfiedOrNot" class="form__checkbox--label">Satisfait ou remboursé (+ 2
+                                    euros)</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="Warranty" id="Warranty">
+                                <label for="Warranty" class="form__checkbox--label">Garantie 2 ans (+ 10 euros)</label>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div id="Option-Right">
+
+                        <div class="Delivery__choice">
+                            <h3 class="Delivery__subtitle">Adresse</h3>
+                            <div>
+                                <label class="label" for="Street">Rue</label>
+                                <input type="text" name="Rue" class="form__input">
+                            </div>
+                            <div>
+                                <label class="label" for="PostCode">Code postal</label>
+                                <input type="text" name="Code postal" class="form__input">
+                            </div>
+                            <div>
+                                <label class="label" for="City">Ville</label>
+                                <input type="text" name="Ville" class="form__input">
+
+                            </div>
+                        </div>
+
+                        <div class="Delivery__Choice">
+                            <h3 class="Delivery__subtitle">Informations complémentaires</h3>
+                            <div>
+                                <label class="label" for="AddMore">interphone, batiment, etc.</label>
+                                <textarea name="AddMore" id="AddMore" cols="30" rows="3"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="deliverychoice-end">
+                <div class="Total">
+                    <span class="Total__Label">Montant total à régler :</span>
+                    <span class="Total__Price">197€</span>
+                </div>
+            </section>
+
+            <section class="deliverychoice-end">
+                <div class="final-actions">
+                    <button class="button" type="button" value="BackTo">Continuer vos achats</button>
+                    <button class="button button-red" type="submit" value="Valid&Pay">Valider et payer</button>
+                </div>
+            </section>
+
+
+        </form>
+
+    </main>
+    <div class="fixed-sales">soldes</div>
+    <footer>
+        <p>ShoppyFig - toutes les images sont sous copyright SquareEnix</p>
+
+    </footer>
+</body>
+
+</html>

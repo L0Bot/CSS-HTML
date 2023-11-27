@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Contact</title>
+</head>
+<body><!-- si l'aspect de TOUTE la page doit changer via CSS, est-ce qu'il ne faudrait pas appliquer une class -->
+    <div class="wrapper">
+        <div id="welcome">
+            <div id="logo">
+                <a href="index.html">O'Clock Students News</a>
+            </div>
+            <div id="welcome-message">
+                <h1>Say a word <span>contact us</span></h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque scelerisque suscipit nibh quis porttitor. Integer iaculis mi urna, a pulvinar quam adipiscing ut. Vivamus vel vestibulum mauris. </p>
+            </div>
+            <nav id="menu">
+                <a href="#">Plan du site</a>
+                <a href="#">Mentions légales</a>
+                <a href="">Contact</a>
+            </nav>
+        </div>
+        <div id="content">
+            <header id="content-header">
+                <h1>Contact</h1>
+            </header>
+            <section id="contact">
+
+
+
+
+
+              <form id="form" action="">
+                <!-- il faudrait pouvoir grouper ces champs car ils traitent du même sujet -->
+                  <!-- et "étiqueter" ce groupe : Identité -->
+                  <div class="form-row">
+                    <p class="label">Je suis</p>
+                    <div class="input-group">
+
+                      <!-- ici, un petit bouton "switch" (l'un ou l'autre), celui-là serait coché par défaut -->
+                      <input type="radio" name="civilite" id="civilite-3" value="3">
+                      <label for="civilite-3">Ne se prononce pas</label>
+                      <span>/</span>
+                      <input type="radio" name="civilite" id="civilite-2" value="2">
+                      <label for="civilite-2">une femme</label>
+                      <span>/</span>
+                      <!-- là, le deuxième -->
+                      <input type="radio" name="civilite" id="civilite-1" value="1">
+                      <label  for="civilite-1">un homme</label>
+                    </div>
+
+                  </div>
+                  <div class="form-row">
+                    <label class="label" for="prenom">Mon prénom est </label>
+                    <!-- un champ texte tout bidon, mais avec Prénom écrit dedans -->
+                    <input type="text" name="prenom" placeholder="Prenom">
+                  </div>
+                  <div class="form-row">
+                    <label class="label" for="nom">Et mon nom, </label>
+                    <!-- le même, avec Nom dedans -->
+                    <input type="text" name="nom" placeholder="Nom" value="Michel">
+
+                  </div>
+                  <div class="form-row">
+                    <label class="label" for="source">J'ai connu ce site grâce à </label>
+                    <!-- là, une petite liste de sources, mais faut pas que ça prenne trop de place, elle pourrait évoluer avec le temps -->
+                    <select name="source" id="source">
+                      <option value="Je sais pu">Je sais pu</option>
+                      <optgroup label="Quelqu'un ?"></optgroup>
+                      <option value="Nicole">Nicole</option>
+                      <option value="Michel">Michel</option>
+                      <option value="George">George</option>
+                      <optgroup label="Quelque chose ?"></optgroup>
+                      <option value="Le sommeil">Le sommeil</option>
+                      <option hidden value="George">George</option>
+                      <option disabled value="zzzz">zzzzzz</option>
+
+
+                    </select>
+                  </div>
+                <!-- </groupe de champs> -->
+                <!-- deuxième groupe de champs : celui du message -->
+                  <!-- Idem, un petit libellé pour guider l'utilisateur 👌 -->
+                  <div class="form-row">
+                    <label class="label" for="email">Répondez-moi via</label>
+                    <!-- un champ pour l'adresse e-mail (mais vraiment pour une adresse e-mail, faut pas qu'on puisse rentrer n'importe quoi dedans) -->
+                    <input type="email" id="email" placeholder="email">
+                  </div>
+
+                  <!--- Pour un numéro de téléphone-->
+                  <div class="form-row">
+                    <label class="label" for="tel">Numéro de téléphone</label>
+                    <!-- un champ pour l'adresse e-mail (mais vraiment pour une adresse e-mail, faut pas qu'on puisse rentrer n'importe quoi dedans) -->
+                    <input type="tel" id="tel" placeholder="tel">
+                  </div>
+
+                  <div class="form-row">
+                    <label class="label" for="message">Je voulais vous dire que</label>
+                    <!-- une belle zone de texte pour pouvoir nous écrire tout un roman 😍 -->
+                    <textarea name="message" id="message" cols="20" rows="4"></textarea>
+                  </div>
+                  <div class="form-row">
+                    <label class="label" for="file">Et vous montrer ça aussi</label>
+                    <!-- il parait qu'on peut envoyer des fichiers, make it happen -->
+                    <input type="file" id="file">
+                  </div>
+                <!-- </groupe de champs> -->
+                <!-- Là, c'est plus pour la distinction visuelle mais faudrait aussi créer un groupe... de 1 🤷 -->
+                <!-- la checkbox a besoin d'être cochée pour valider le formulaire-->  
+                <div class="form-row">
+                    <label class="label" for="info">Je certifie la véracité de ces informations.</label>
+                    <!-- là, une cochette -->
+                    <input type="checkbox" required id="info" name="info" value="1">
+                  </div>
+                <!-- </groupe de champs> -->
+                <!-- un bouton pour envoyer le tout -->
+                <!-- Input type="submit" crée un bouton qui valie le formulaire, value est le texte qui va s'afficher sur le bouton-->
+                  <button id="submit-form" type="submit" value="Envoyer">Envoyer </button>
+
+                  <!-- Bouton permettant de réinitialiser le contenu du formulaire-->
+                  <input type="reset" value="Reset">
+
+
+              </form>
+
+
+
+
+
+            </section>
+        </div>
+    </div>
+</body>
+</html>

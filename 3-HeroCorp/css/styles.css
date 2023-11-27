@@ -1,0 +1,116 @@
+body {
+    background-color: #d3d3d3;
+        }
+
+#prince {
+    background-color: #fafafa;
+    width: 80%;
+    text-align: center;
+    margin: 2% auto;
+    border: 0.12rem solid black;
+    padding: 2%;
+}
+
+header {
+    background: url(../images/hc.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 20rem;
+    
+}
+
+h1, h2, h3 {
+    font-weight: bolder;
+    font-family: Oswald, sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    padding: 1rem;
+    border-top: 0.15rem solid #8b0000;
+    border-bottom: 0.15rem solid #8b0000;
+    margin-top: 20rem;
+}
+
+span {
+    background-color: black;
+    color: #fafafa;
+    font-size: 0.85rem;
+    padding: 1% 2%;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: #8b0000;
+}
+
+#logo {
+    display: inline-block;
+    height: 4rem;
+    margin: 0.5rem;
+}
+
+strong {
+    font-weight: bold;
+}
+
+main {
+    background-color: #eeeeee;
+    margin: 0.2rem 5rem 0.2rem 5rem;
+    padding: 1rem;
+}
+
+main p {
+    margin: 1rem;
+}
+
+.alleft {
+    text-align: left;
+}
+
+#inform {
+    border-top: 0.1rem solid black;
+    padding-top: 1rem;
+    font-style: italic;
+    }
+
+.listact {
+    display: flex;
+    flex-direction: column;
+}
+
+.listact a {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-variant: small-caps;
+    background-color: #eeeeee;
+    color: #8b0000;
+    border-radius: 10;
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+#affiche {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+article {
+    width: 45%;
+    margin: 1em auto;
+    border: 0.1em solid #eeeeee;
+    padding: 1.5em 1em;
+}
+
+article > img {
+    height: 9rem;
+}
+
+footer {
+    background-color: #eeeeee;
+    padding: 1rem 0 4rem 0;
+}

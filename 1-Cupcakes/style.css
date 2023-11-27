@@ -1,0 +1,59 @@
+* {
+    font-family: sans-serif;
+    }
+body {
+    background-color: #fff3db;
+    max-width: 621px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #f02425;
+}
+
+h2 {
+    text-align: center;
+    color: #f02425;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 200;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+strong {
+    color: #f02425
+}
+bdi {
+    color: #f02425;
+}
+
+#normal {
+    color: black;
+}
+
+img {
+    margin: auto;
+    width: 621px;
+    
+}
+
+a:hover {
+    color: #f02425;
+}
+
+a {
+    color: blue;
+}
+
+.Astuces {
+    text-align: center;
+    background-color: coral;
+    color: dimgray;
+    font-style: italic;
+    font-weight: 600;
+}
